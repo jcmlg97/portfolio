@@ -1,60 +1,166 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jesús Cobos Mena - Desarrollador Full Stack Junior</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 text-gray-900">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
 
-  <!-- Header -->
-  <header class="bg-gray-800 text-white py-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h1 class="text-3xl font-bold">Jesús Cobos Mena</h1>
-      <p class="text-lg mt-2">Desarrollador Full Stack Junior</p>
-    </div>
+    body {
+      background-color: #0A1A2F;
+      color: #FFFFFF;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #0D223A;
+      text-align: center;
+      padding: 3rem 1rem;
+      border-bottom: 3px solid #D4AF37;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #D4AF37;
+    }
+
+    header h2 {
+      font-weight: 300;
+      color: #FFFFFF;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    h3 {
+      border-left: 4px solid #D4AF37;
+      padding-left: 10px;
+      margin-bottom: 1rem;
+      color: #D4AF37;
+    }
+
+    .about, .projects, .contact {
+      background-color: #11294A;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+      margin-bottom: 2rem;
+    }
+
+    .project {
+      background-color: #0D223A;
+      border-left: 3px solid #D4AF37;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+    }
+
+    .project a {
+      color: #D4AF37;
+      text-decoration: none;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      border-top: 2px solid #D4AF37;
+      background-color: #0D223A;
+    }
+
+    .icons {
+      margin-top: 1rem;
+    }
+
+    .icons a {
+      color: #D4AF37;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    .icons a:hover {
+      color: #FFFFFF;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      section { margin: 2rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jesús Cobos Mena</h1>
+    <h2>Desarrollador Full Stack Junior</h2>
   </header>
 
-  <!-- Sobre mí -->
-  <section class="max-w-4xl mx-auto px-6 py-12">
-    <h2 class="text-2xl font-semibold mb-4">Sobre mí</h2>
-    <p class="text-gray-700 leading-relaxed">
-      Soy estudiante de Desarrollo de Aplicaciones Web con interés en crear soluciones completas
-      tanto en frontend como en backend. Me gusta trabajar con tecnologías modernas y seguir
-      aprendiendo cada día para crecer como desarrollador.
+  <section class="about">
+    <h3>Sobre mí</h3>
+    <p>
+      Soy Jesús Cobos, estudiante de Desarrollo de Aplicaciones Web (DAW). Me apasiona la programación web y busco seguir aprendiendo y creciendo profesionalmente. Me considero una persona comprometida, con ganas de aportar soluciones y seguir mejorando día a día.
     </p>
   </section>
 
-  <!-- Tecnologías -->
-  <section class="bg-white py-12 shadow">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-2xl font-semibold mb-6">Tecnologías</h2>
-      <ul class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-gray-800">
-        <li class="bg-gray-100 p-4 rounded-lg shadow text-center font-medium">HTML5</li>
-        <li class="bg-gray-100 p-4 rounded-lg shadow text-center font-medium">CSS3</li>
-        <li class="bg-gray-100 p-4 rounded-lg shadow text-center font-medium">JavaScript</li>
-        <li class="bg-gray-100 p-4 rounded-lg shadow text-center font-medium">PHP</li>
-        <li class="bg-gray-100 p-4 rounded-lg shadow text-center font-medium">Laravel</li>
-        <li class="bg-gray-100 p-4 rounded-lg shadow text-center font-medium">MySQL</li>
-      </ul>
+  <section class="projects">
+    <h3>Proyectos</h3>
+
+    <div class="project">
+      <h4>Buscador de Películas (API TMDb)</h4>
+      <p>Aplicación que permite buscar información sobre películas utilizando la API de The Movie Database (TMDb), desarrollada con PHP, Jaxon y Guzzle.</p>
+      <a href="#" target="_blank">Ver proyecto</a>
+    </div>
+
+    <!-- Puedes añadir más proyectos copiando este bloque -->
+    <!--
+    <div class="project">
+      <h4>Nombre del Proyecto</h4>
+      <p>Descripción breve del proyecto.</p>
+      <a href="#" target="_blank">Ver proyecto</a>
+    </div>
+    -->
+  </section>
+
+  <section class="contact">
+    <h3>Contacto</h3>
+    <p>Puedes ponerte en contacto conmigo a través de los siguientes medios:</p>
+    <div class="icons">
+      <a href="mailto:jesuscobos97@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/jcmlg97" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
     </div>
   </section>
 
-  <!-- Contacto -->
-  <section class="max-w-4xl mx-auto px-6 py-12">
-    <h2 class="text-2xl font-semibold mb-4">Contacto</h2>
-    <p class="text-gray-700">Puedes escribirme a: 
-      <a href="mailto:jesuscobos97@gmail.com" class="text-blue-600 font-medium hover:underline">
-        jesuscobos97@gmail.com
-      </a>
-    </p>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-4 mt-8">
+  <footer>
     <p>&copy; 2025 Jesús Cobos Mena. Todos los derechos reservados.</p>
   </footer>
 
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/a2b1e6b5a8.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
