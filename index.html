@@ -84,6 +84,16 @@
       text-decoration: underline;
     }
 
+    .technology {
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    }
+
+    .technology:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(212,175,55,0.35);
+      background-color: #132f52;
+    }
+
     footer {
       text-align: center;
       padding: 1rem 0;
@@ -106,6 +116,21 @@
       color: #FFFFFF;
     }
 
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section {
+      animation: fadeUp 0.6s ease both;
+    }
+
     @media (max-width: 600px) {
       header h1 { font-size: 2rem; }
       section { margin: 2rem 1rem; }
@@ -117,12 +142,32 @@
   <header>
     <h1>Jesús Cobos Mena</h1>
     <h2>Desarrollador Full Stack Junior</h2>
+
+    <div style="margin-top: 1rem;">
+      <span style="display:inline-block; padding:4px 10px; margin:5px; background:#0D223A; border:1px solid #D4AF37; border-radius:20px;">
+        DAW
+      </span>
+
+      <span style="display:inline-block; padding:4px 10px; margin:5px; background:#0D223A; border:1px solid #D4AF37; border-radius:20px;">
+        AWS Cloud Practitioner
+      </span>
+    </div>
   </header>
 
   <section class="about">
     <h3>Sobre mí</h3>
     <p>
-      Soy Jesús Cobos, estudiante de Desarrollo de Aplicaciones Web (DAW). Me apasiona la programación web y busco seguir aprendiendo y creciendo profesionalmente. Me considero una persona comprometida, con ganas de aportar soluciones y seguir mejorando día a día.
+      Soy Jesús Cobos, desarrollador Full Stack con titulación en Desarrollo de Aplicaciones Web (DAW) y certificación AWS Certified Cloud Practitioner.
+      Me apasiona la programación web y la creación de aplicaciones funcionales, escalables y bien estructuradas.
+    </p>
+
+    <p>
+      Actualmente sigo ampliando mis conocimientos en desarrollo backend con PHP y Laravel, así como en tecnologías cloud con AWS.
+      Me considero una persona constante, con mentalidad de aprendizaje continuo y orientada a la mejora de mis habilidades técnicas.
+    </p>
+
+    <p>
+      Busco oportunidades donde pueda aportar valor como desarrollador junior, seguir creciendo profesionalmente y participar en proyectos reales.
     </p>
   </section>
 
@@ -132,7 +177,7 @@
     <div class="project">
       <h4>Buscador de Películas (API TMDb)</h4>
       <p>Aplicación que permite buscar información sobre películas utilizando la API de The Movie Database (TMDb), desarrollada con PHP, Jaxon y Guzzle.</p>
-      <a href="https://proyectos.ct.ws/buscador-peliculas/" target="_blank">Ver proyecto</a>
+      <a href="https://j-proyectos.gt.tc/buscador-peliculas/" target="_blank">Ver proyecto</a>
     </div>
 
     <!-- Plantilla proyectos -->
@@ -146,27 +191,27 @@
   </section>
 
   <section class="technologies">
-     <h3>Tecnologías</h3>
-     <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 1rem;">
-       <div style="flex: 1 1 120px; background-color: #0D223A; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 0 10px rgba(212,175,55,0.3);">
-         HTML5
-       </div>
-       <div style="flex: 1 1 120px; background-color: #0D223A; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 0 10px rgba(212,175,55,0.3);">
-         CSS3
-       </div>
-       <div style="flex: 1 1 120px; background-color: #0D223A; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 0 10px rgba(212,175,55,0.3);">
-         JavaScript
-       </div>
-       <div style="flex: 1 1 120px; background-color: #0D223A; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 0 10px rgba(212,175,55,0.3);">
-         PHP
-       </div>
-       <div style="flex: 1 1 120px; background-color: #0D223A; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 0 10px rgba(212,175,55,0.3);">
-         Laravel
-       </div>
-       <div style="flex: 1 1 120px; background-color: #0D223A; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 0 10px rgba(212,175,55,0.3);">
-         MySQL
-       </div>
+   <h3>Tecnologías</h3>
+   <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 1rem;">
+     <div class="technology" style="flex: 1 1 120px; background-color: #0D223A; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 0 10px rgba(212,175,55,0.3);">
+       HTML5
      </div>
+     <div class="technology" style="flex: 1 1 120px; background-color: #0D223A; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 0 10px rgba(212,175,55,0.3);">
+       CSS3
+     </div>
+     <div class="technology" style="flex: 1 1 120px; background-color: #0D223A; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 0 10px rgba(212,175,55,0.3);">
+       JavaScript
+     </div>
+     <div class="technology" style="flex: 1 1 120px; background-color: #0D223A; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 0 10px rgba(212,175,55,0.3);">
+       PHP
+     </div>
+     <div class="technology" style="flex: 1 1 120px; background-color: #0D223A; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 0 10px rgba(212,175,55,0.3);">
+       Laravel
+     </div>
+     <div class="technology" style="flex: 1 1 120px; background-color: #0D223A; padding: 1rem; border-radius: 8px; text-align: center; box-shadow: 0 0 10px rgba(212,175,55,0.3);">
+       MySQL
+     </div>
+   </div>
   </section>
 
 
@@ -181,7 +226,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Jesús Cobos Mena. Todos los derechos reservados.</p>
+    <p>&copy; 2026 Jesús Cobos Mena. Todos los derechos reservados.</p>
   </footer>
 
 </body>
